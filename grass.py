@@ -8,5 +8,8 @@ class Grass:
     def draw(self):
         self.image.draw(400, 30)
 
+    def set_y(self, y_):
+        self.y = y_
+
     def update(self):
         pass
