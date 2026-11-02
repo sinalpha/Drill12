@@ -1,5 +1,5 @@
 from pico2d import *
-from boy import Boy
+# from boy import Boy
 from grass import Grass
 
 import game_world
@@ -17,24 +17,25 @@ def handle_events():
         elif event.type == SDL_KEYDOWN and event.key == SDLK_ESCAPE:
             running = False
         else:
-            boy.handle_event(event)
 
+            # boy.handle_event(event)
+            pass
 
 
 def reset_world():
-    global boy
+    # global boy
 
-    boy = Boy()
-    game_world.add_object(boy, 1)
+    # boy = Boy()
+    # game_world.add_object(boy, 1)
 
     grass = Grass()
-    grass.set_y(0)
-    game_world.add_object(grass, 0)
+    grass.set_y(30)
+    game_world.add_object(grass, 2)
 
 
     grass = Grass()
     grass.set_y(60)
-    game_world.add_object(grass, 2)
+    game_world.add_object(grass, 1)
 
 def update_world():
     game_world.update()
