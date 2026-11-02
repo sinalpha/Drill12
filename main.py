@@ -1,5 +1,5 @@
 from pico2d import *
-# from boy import Boy
+from boy import Boy
 from grass import Grass
 
 import game_world
@@ -18,15 +18,15 @@ def handle_events():
             running = False
         else:
 
-            # boy.handle_event(event)
+            boy.handle_event(event)
             pass
 
 
 def reset_world():
-    # global boy
+    global boy
 
-    # boy = Boy()
-    # game_world.add_object(boy, 1)
+    boy = Boy()
+    game_world.add_object(boy, 1)
 
     grass = Grass()
     grass.set_y(30)

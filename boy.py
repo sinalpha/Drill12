@@ -3,7 +3,7 @@ from math import pi
 from pico2d import get_canvas_width, get_time, load_image
 from sdl2 import (SDL_KEYDOWN, SDL_KEYUP, SDLK_LEFT, SDLK_RIGHT,
                   SDLK_SPACE)
-# from transitions import Machine
+from transitions import Machine
 
 import game_world
 from ball import Ball
